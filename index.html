@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contactModal">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Sunset Image Slider -->
+  <div class="slider">
+    <div class="slides">
+      <img src="sunset1.jpg" alt="Sunset Image 1">
+      <img src="sunset2.jpg" alt="Sunset Image 2">
+      <img src="sunset3.jpg" alt="Sunset Image 3">
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi, I'm Vedant Jain, a passionate web developer with experience in HTML, CSS, JavaScript, and more!</p>
+  </section>
+
+  <!-- Projects Section with Cards -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Medical Waste Management System</h3>
+      <p>The system aims to streamline the process of managing medical waste disposal, ensuring compliance with safety standards and reducing the risk of contamination. It provides features to record, categorize, and track waste from its origin to disposal.</p>
+    </div>
+    <div class="project-card">
+      <h3>Personal Portfolio project</h3>
+      <p>The objective of this project is to create a responsive and interactive personal portfolio website that showcases your skills, projects, and professional background to potential employers and collaborators. The website provides a platform to display your resume, coding projects, technical skills, and contact information.</p>
+    </div>
+    <div class="project-card">
+      <h3>Volume Adjuster</h3>
+      <p>Created a Python application to control and adjust the system's audio volume, providing users with the ability to increase, decrease, or mute the sound programmatically.</p>
+    </div>
+  </section>
+
+  <!-- Contact Modal -->
+  <div id="contactModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <p id="responseMessage"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
